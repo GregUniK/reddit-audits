@@ -1,14 +1,17 @@
-# WiZink — Reddit Audit
+# Reddit Audits
 
-Self-contained Reddit brand & community audit for WiZink, hosted on GitHub Pages.
+Self-contained Reddit brand & community audits, hosted on GitHub Pages.
+One folder per client slug; each audit is that folder's `index.html`.
 
-| Market | Report |
-|--------|--------|
-| 🇵🇹 Portugal | [`reddit-audit-wizink-pt.html`](reddit-audit-wizink-pt.html) |
-| 🇪🇸 España | [`reddit-audit-wizink-es.html`](reddit-audit-wizink-es.html) |
+| Client | Folder | Live URL |
+|--------|--------|----------|
+| WiZink Portugal | [`wizink-pt/`](wizink-pt/) | https://gregunik.github.io/reddit-audits/wizink-pt/ |
+| WiZink España | [`wizink-es/`](wizink-es/) | https://gregunik.github.io/reddit-audits/wizink-es/ |
 
-The landing page ([`index.html`](index.html)) links both markets.
+## Adding a client
 
-Each report is a single, self-contained HTML file (charts, fonts and icons load
-from public CDNs). Deployment is automated via [`.github/workflows/pages.yml`](.github/workflows/pages.yml)
-on every push to `main`.
+1. Create `<slug>/index.html` (the self-contained audit).
+2. Commit + push — the Pages workflow ([`.github/workflows/pages.yml`](.github/workflows/pages.yml)) redeploys automatically.
+
+Reports carry `noindex,nofollow` and are meant to be shared by direct link, not
+found via search. Slugs mirror the [`ai-visibility`](https://github.com/GregUniK/ai-visibility) repo.
