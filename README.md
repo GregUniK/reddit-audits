@@ -5,6 +5,7 @@ One folder per client slug; each audit is that folder's `index.html`.
 
 | Client | Folder | Live URL |
 |--------|--------|----------|
+| REDUNIQ | [`reduniq/`](reduniq/) | https://gregunik.github.io/reddit-audits/reduniq/ |
 | WiZink Portugal | [`wizink-pt/`](wizink-pt/) | https://gregunik.github.io/reddit-audits/wizink-pt/ |
 | WiZink España | [`wizink-es/`](wizink-es/) | https://gregunik.github.io/reddit-audits/wizink-es/ |
 
