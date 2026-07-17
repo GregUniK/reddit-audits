@@ -29,6 +29,9 @@ jobs:
         with:
           enablement: true
 
+      - name: Inject noindex + rebuild audit index
+        run: node .github/scripts/build-hub.mjs
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
