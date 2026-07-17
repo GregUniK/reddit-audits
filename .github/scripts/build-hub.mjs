@@ -10,6 +10,11 @@
 // Runs against the working tree, whose contents become the Pages artifact.
 // Nothing here is committed back.
 //
+// CAUTION: running this locally MUTATES the working tree (injects noindex into
+// the audits + writes tasks/index.html). If you run it to test, `git checkout`
+// the audit files before committing — the repo must hold RAW audits so CI is
+// the sole injector. tasks/ is gitignored, so it won't be committed regardless.
+//
 // Fails the build if an audit cannot be injected — deploying an indexable
 // client audit is worse than a failed deploy.
 
